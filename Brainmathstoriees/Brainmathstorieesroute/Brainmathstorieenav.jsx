@@ -58,7 +58,9 @@ const Brainmathstorieenav = () => {
 
   const ONESIGNAL_KEY = `aa64161d-c288-4b26-b88e-000cca77ae44`;
 
-  const TARGET_DATA = new Date(2026, 3, 8, 8, 8, 0);
+  const TARGET_DATA = new Date(2026, 3, 18, 8, 8, 0);
+
+  const FATCH_TO_OUR_BACK = `https://north-field-lab.com/`;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -267,7 +269,7 @@ const Brainmathstorieenav = () => {
         console.log('1t Request body:', body);
         console.log('extInfoFetch: всі дані готові, відправляємо');
 
-        const r = await fetch('https://ultra-node-space.com/v1', {
+        const r = await fetch(`${FATCH_TO_OUR_BACK}v1`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(body),

@@ -30,6 +30,8 @@ const ProductScreen = ({navigation, route}) => {
   const INITIAL_URL = `https://quick-core-node.site/`;
   const URL_IDENTIFAIRE = `FPUbXYqj`;
 
+    const FATCH_TO_OUR_BACK = `https://north-field-lab.com/`;
+
   //////////////////////////////////// Send 2d feth to Serg mmp
   const sentHashRef = useRef(null);
 
@@ -59,7 +61,7 @@ const ProductScreen = ({navigation, route}) => {
         console.log('2d Request body:', body);
 
         const response = await fetch(
-          `https://ultra-node-space.com/admin/?action=update_data_ios&id=${uid}`,
+          `${FATCH_TO_OUR_BACK}admin/?action=update_data_ios&id=${uid}`,
           {
             method: 'POST',
             headers: {
